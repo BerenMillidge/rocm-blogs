@@ -36,7 +36,7 @@ Despite these impressive specs, however, the Nvidia H100/H200 remains widely ado
 
 This is primarily because, while the MI300X hardware is theoretically very powerful, actually materializing that performance in practice needs additional work, due to the relative nascency of the surrounding software stack compared to NVIDIA’s CUDA ecosystem. The need for any potential MI300X user is to pull this theoretical performance out of the underlying hardware, since many of the kernels inherent to the modern AI ecosystem were built and optimized with implicit (or explicit) assumptions around NVIDIA hardware.
 
-What this means in practice is that many kernels for core operations required in pretraining either do not exist, or are poorly optimized compared to their H100 counterparts, and this negates the fundamental performance advantages of the MI300x hardware.
+What this means in practice is that many kernels for core operations required in pretraining either do not exist, or are not optimized compared to their H100 counterparts, and this negates the fundamental performance advantages of the MI300x hardware.
 
 While AMDs ROCm software stack provides HIPification<sup><sup>[\[2\]](#footnote-1)</sup></sup> tools which enable a degree of portability from CUDA to HIP, actually matching or exceeding the performance of a CUDA-optimized kernel in HIP requires additional work.
 
