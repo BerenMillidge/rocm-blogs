@@ -8,7 +8,7 @@ category: Applications & models
 language: English
 myst:
   html_meta:
-    "description lang=en": "Mamba2 and Flash Attention Backward Kernels on AMD MI300x with ROCm"
+    "description lang=en": "In this blog, we demonstrate the first backwards kernels to surpass H100s for both transformers (Flash Attention v2) and hybrid models (Mamba2), which enables training foundation models on AMD Instinct MI300X accelerators."
     "keywords": "Mamba, PyTorch, S4, S6, Mamba2, Transformer, Flash Attention, Optimization, Hardware-aware, Transformer, Attention, ROCm, Mi210, MI250, MI300, AI/ML, Generative AI"
     "property=og:locale": "en_US"
 ---
