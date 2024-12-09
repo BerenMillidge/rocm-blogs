@@ -2,7 +2,7 @@
 blogpost: true
 date: 07 December 2024
 blog_title: "Zyphra Introduces Frontier Training Kernels for Transformers and SSMs on AMD Instinct MI300X Accelerators"
-author: Quentin Anthony, Beren Millidge
+author: Quentin Anthony
 tags: LLM, AI/ML, GenAI, PyTorch
 category: Applications & models
 language: English
@@ -16,8 +16,9 @@ myst:
 
 # Training Transformers and Hybrid models on AMD Instinct MI300X Accelerators
 
+## Introduction
 
-On paper, the AMD Instinct MI300X GPU accelerators contain some of the best hardware specifications on the market, significantly outperforming its competitor the Nvidia H100 GPU. The key hardware specs where the MI300X surpasses the H100 are High Bandwidth Memory (HBM) capacity and bandwidth.
+On paper, the AMD Instinct MI300X GPU accelerators contain some of the best hardware specifications on the market. The key hardware specs where the MI300X surpasses its main competitor, the NVIDIA H100 GPU, are High Bandwidth Memory (HBM) capacity and bandwidth.
 
 The MI300X also has significantly more compute hardware at its disposal, with a significantly greater number of streaming multiprocessors (SMs) than the H100. While this leads to incredibly high theoretical BFLOAT16 throughput, there are some caveats in practice that we discuss below.
 
