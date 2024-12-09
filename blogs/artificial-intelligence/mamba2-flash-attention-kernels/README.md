@@ -16,7 +16,6 @@ myst:
 
 # Training Transformers and Hybrid models on AMD Instinct MI300X Accelerators
 
-*By Quentin Anthony and Beren Millidge from Zyphra*
 
 On paper, the AMD Instinct MI300X GPU accelerators contain some of the best hardware specifications on the market, significantly outperforming its competitor the Nvidia H100 GPU. The key hardware specs where the MI300X surpasses the H100 are High Bandwidth Memory (HBM) capacity and bandwidth.
 
