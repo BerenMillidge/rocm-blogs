@@ -4,7 +4,7 @@ date: 07 December 2024
 blog_title: "Zyphra Introduces Frontier Training Kernels for Transformers and SSMs on AMD Instinct MI300X Accelerators"
 author: Quentin Anthony
 tags: LLM, AI/ML, GenAI, PyTorch
-category: Applications & models
+category: Ecosystems and Partners
 language: English
 myst:
   html_meta:
@@ -16,8 +16,11 @@ myst:
 
 # Training Transformers and Hybrid models on AMD Instinct MI300X Accelerators
 
-## Introduction
+This blog is contributed by [Zyphra](https://www.zyphra.com/): a Palo Alto-based AI research lab and AMD Instinct Partner.
 
+Zyphra is designing MaiaOS, a multimodal agent system that combines next-gen neural network architectures (SSM hybrids), long-term memory & reinforcement learning.
+
+In this blog we motivate our vision of training transformers and hybrid models at a lower cost using AMD technology. We explain how Zyphra harnessed the fundamental performance advantages of the MI300x hardware on Zyphra's hybrid models: the Mamba2, and the Flash Attention v2. We conclude the blog by sharing benchmarks results showing the speedups we achieved on the MI300X using ROCm, compared to the competition.
 On paper, the AMD Instinct MI300X GPU accelerators contain some of the best hardware specifications on the market. The key hardware specs where the MI300X surpasses its main competitor, the NVIDIA H100 GPU, are High Bandwidth Memory (HBM) capacity and bandwidth.
 
 The MI300X also has significantly more compute hardware at its disposal, with a significantly greater number of streaming multiprocessors (SMs) than the H100. While this leads to incredibly high theoretical BFLOAT16 throughput, there are some caveats in practice that we discuss below.
@@ -91,7 +94,12 @@ We baked in the following AMD-specific optimizations when writing the Mamba-2 ba
 
 Similar to FA2, we achieve speedups on the Mamba2 backward kernel of 4%, 5%, and 6% for sequence lengths of 2k, 4k, and 8k, respectively on MI300X compared to the H100. Cache thrashing, data movement cost, and SM utilization are all significantly improved. With both the Mamba2 forwards and backwards and the Flash Attention 2 backwards kernel in-hand, pure-SSM and hybrid attention/SSM models are trainable on MI300X hardware, and can achieve higher FLOPs per dollar than is possible on NVIDIA H100 systems.
 
-## Future Work
+## Summary
+
+In this blog post we outlined Zyphra’s vision of training transformers and hybrid models at a lower cost. We explain how Zyphra is realizing this vision by optimizing the superior hardware specifications of the AMD Instinct MI300X Accelerators, using ROCm to train Zyphra’s hybrid models: the Mamba2 and the Flash Attention v2.
+
+As future work, Zyphra plans to extend the attention kernel and portions of the Mamba2 kernel to fp8 precision, and enable fine-grained tensor-parallel overlap within the Mamba2, Attention, and MLP blocks with communication. Both optimizations are critical to Zyphra’s training pipeline.
+
 
 As future work, we plan to extend the attention kernel and portions of the Mamba2 kernel to fp8 precision, and enable fine-grained tensor-parallel overlap within the Mamba2, Attention, and MLP blocks with communication. Both optimizations are critical to Zyphra’s training pipeline.
 
