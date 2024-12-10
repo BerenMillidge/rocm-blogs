@@ -21,12 +21,13 @@ myst:
 
 This blog is contributed by [Zyphra](https://www.zyphra.com/): a Palo Alto-based AI research lab and AMD Instinct Partner.
 
-Zyphra is designing MaiaOS, a multimodal agent system that combines next-gen neural network architectures (SSM hybrids), long-term memory & reinforcement learning.
+Zyphra is designing MaiaOS, a multimodal agent system that combines next-gen neural network architectures (SSM hybrids), long-term memory, and reinforcement learning.
 
-In this blog we motivate our vision of training transformers and hybrid models at a lower cost using AMD technology. We explain how Zyphra harnessed the fundamental performance advantages of the MI300x hardware on Zyphra's hybrid models: the Mamba2, and the Flash Attention v2. We conclude the blog by sharing benchmarks results showing the speedups we achieved on the MI300X using ROCm, compared to the competition.
+In this blog we motivate our vision of training transformers and hybrid models at a lower cost using AMD technology. We explain how Zyphra harnessed the hardware advantages of the MI300x hardware for training both dense transformers and Zyphra's hybrid models. Specifically, the model blocks of interest are Mamba2 and Flash Attention v2. We conclude the blog by sharing benchmarks results showing the speedups we achieved on the MI300X using ROCm, compared to the competition.
+
 On paper, the AMD Instinct MI300X GPU accelerators contain some of the best hardware specifications on the market. The key hardware specs where the MI300X surpasses its main competitor, the NVIDIA H100 GPU, are High Bandwidth Memory (HBM) capacity and bandwidth.
 
-The MI300X also has significantly more compute hardware at its disposal, with a significantly greater number of streaming multiprocessors (SMs) than the H100. While this leads to incredibly high theoretical BFLOAT16 throughput, there are some caveats in practice that we discuss below.
+The MI300X also has more compute hardware at its disposal, with a significantly greater number of streaming multiprocessors (SMs) than the H100. While this leads to incredibly high theoretical BFLOAT16 throughput, there are some caveats in practice that we discuss below.
 
 For exact comparisons, see the table below:
 
