@@ -9,7 +9,7 @@ category: Ecosystems and Partners
 language: English
 myst:
   html_meta:
-    "description lang=en": "In this blog, we demonstrate the first backwards kernels to surpass H100s for both transformers (Flash Attention v2) and hybrid models (Mamba2), which enables training foundation models on AMD Instinct MI300X accelerators."
+    "description lang=en": "This blog shows Zyphra's new training kernels for transformers and hybrid models on AMD Instinct MI300X accelerators, surpassing the H100s performance"
     "keywords": "Mamba, PyTorch, S4, S6, Mamba2, Transformer, Flash Attention, Optimization, Hardware-aware, Transformer, Attention, ROCm, Mi210, MI250, MI300, AI/ML, Generative AI"
     "property=og:locale": "en_US"
 ---
@@ -17,7 +17,7 @@ myst:
 
 # Training Transformers and Hybrid models on AMD Instinct MI300X Accelerators
 
-## Introduction
+## Harnessing the MI300 Hardware Specs
 
 This blog is contributed by [Zyphra](https://www.zyphra.com/): a Palo Alto-based AI research lab and AMD Instinct Partner.
 
