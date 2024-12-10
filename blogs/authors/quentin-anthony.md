@@ -15,5 +15,6 @@
 :align: left
 ```
 
-Quentin Anthony is the model training lead at Zyphra, where he is building hybrid models optimized for both cloud and on-device deployment. 
+Quentin Anthony is the model training lead at Zyphra, where he is building hybrid models optimized for both cloud and on-device deployment.
+
 His research is focused on the overlap between systems and deep learning.
