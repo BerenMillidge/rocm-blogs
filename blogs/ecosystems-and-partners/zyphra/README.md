@@ -1,6 +1,6 @@
 ---
 blogpost: true
-date: 07 December 2024
+date: 10 December 2024
 blog_title: "Zyphra Introduces Frontier Training Kernels for Transformers and SSMs on AMD Instinct MI300X Accelerators"
 author: Quentin Anthony
 tags: LLM, AI/ML, GenAI, PyTorch
@@ -15,6 +15,8 @@ myst:
 
 
 # Training Transformers and Hybrid models on AMD Instinct MI300X Accelerators
+
+## Introduction
 
 This blog is contributed by [Zyphra](https://www.zyphra.com/): a Palo Alto-based AI research lab and AMD Instinct Partner.
 
